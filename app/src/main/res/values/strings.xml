@@ -2,4 +2,6 @@
     <string name="app_name">Cadastro</string>
     <string name="cabecalho">Cadastro</string>
     <string name="nome_completo">Nome completo</string>
+    <string name="telefone">Telefone</string>
+    <string name="Exemplo_telefone">Ex: (99) 9999-9999</string>
 </resources>
