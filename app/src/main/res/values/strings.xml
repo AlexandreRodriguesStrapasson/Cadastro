@@ -4,4 +4,10 @@
     <string name="nome_completo">Nome completo</string>
     <string name="telefone">Telefone</string>
     <string name="Exemplo_telefone">Ex: (99) 9999-9999</string>
+    <string name="checkBoxText">Ingressar na lista de E-mails?</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="sexo">Sexo</string>
+    <string name="cidade">Cidade</string>
+    <string name="uf">UF</string>
 </resources>
