@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
         inputCidade     = findViewById(R.id.inputCidade);
         inputUf         = findViewById(R.id.inputUf);
 
-        Button salvarBotao = findViewById(R.id.Bsalvar);
-        salvarBotao.setOnClickListener(new View.OnClickListener() {
+        Button salvar = findViewById(R.id.Bsalvar);
+        Button limpar = findViewById(R.id.Blimpar);
+        salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String nome                 = inputNome.getText().toString();
@@ -42,13 +43,26 @@ public class MainActivity extends AppCompatActivity {
                 String uf                   = inputUf.getText().toString();
 
                 System.out.println("Nome: " + nome);
-                System.out.println("Telefone" + telefone);
+                System.out.println("Telefone: " + telefone);
                 System.out.println("Ingressar na lista de E-mails: " + respostaCheckBox);
                 System.out.println("Sexo: " + sexo);
                 System.out.println("Cidade: " + cidade);
                 System.out.println("UF: " + uf);
             }
         });
+
+        limpar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                inputNome.setText("");
+                inputTelefone.setText("");
+                checkBox.setChecked(false);
+                radioButton1.setChecked(true);
+                inputCidade.setText("");
+                inputUf.setText("");
+            }
+        });
+
 
 
     }
