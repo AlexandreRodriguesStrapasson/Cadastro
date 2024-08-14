@@ -100,11 +100,13 @@
         app:layout_constraintTop_toBottomOf="@id/sexoTv"
         app:layout_constraintStart_toStartOf="parent">
         <RadioButton
+            android:id="@+id/masculinoRb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/masculino"/>
 
         <RadioButton
+            android:id="@+id/femininoRb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/feminino"/>
@@ -148,7 +150,7 @@
 
     <Button
         android:id="@+id/btClear"
-        android:layout_width="180sp"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:text="@string/limpar"
         android:layout_marginStart="15sp"
@@ -157,7 +159,7 @@
 
     <Button
         android:id="@+id/btSave"
-        android:layout_width="180sp"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:text="@string/salvar"
         android:layout_marginEnd="15sp"
