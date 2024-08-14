@@ -118,7 +118,23 @@
         android:autofillHints="UF"
         app:layout_constraintTop_toBottomOf="@id/ufTv"/>
 
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:text="@string/limpar"
+        android:layout_marginStart="15sp"
+        app:layout_constraintTop_toBottomOf="@id/ufAutoCompleteTv"
+        app:layout_constraintStart_toStartOf="parent"/>
 
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        android:layout_marginEnd="15sp"
+        app:layout_constraintTop_toBottomOf="@id/ufAutoCompleteTv"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 
