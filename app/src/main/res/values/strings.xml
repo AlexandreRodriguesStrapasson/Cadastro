@@ -13,4 +13,12 @@
     <string name="limpar">Limpar</string>
     <string name="salvar">Salvar</string>
     <string name="phone_exemple">Ex: 000000-0000</string>
+
+    <string-array name="estados_brasileiros">
+        <item>AC</item>
+        <item>RJ</item>
+        <item>SP</item>
+        <item>MG</item>
+        <item>BA</item>
+    </string-array>
 </resources>
