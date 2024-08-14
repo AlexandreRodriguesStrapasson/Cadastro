@@ -16,14 +16,18 @@ class MainActivity : AppCompatActivity() {
         amd = ActivityMainBinding.inflate(layoutInflater)
         setContentView(amd.main)
 
-        amd.btSave.setOnClickListener { v: View ->
+        amd.btSave.setOnClickListener {
             val nomeCompleto = amd.nomeCompletoEt.text.toString()
             val telefone = amd.telefoneEt.text.toString()
+            val email = amd.emailEt.text.toString()
+            val emailListado = if(amd.emailCb.isChecked) "Sim" else "Não"
 
             Toast.makeText(
                 this@MainActivity,
                 "Nome: $nomeCompleto \n" +
-                        "Telefone: $telefone",
+                        "Telefone: $telefone \n" +
+                        "E-mail: $email \n" +
+                        "Inscrito na lista de E-mails: $emailListado",
                 Toast.LENGTH_SHORT
             ).show()
         }
