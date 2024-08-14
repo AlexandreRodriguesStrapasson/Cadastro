@@ -1,7 +1,6 @@
 package com.example.cadastro
 
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cadastro.databinding.ActivityMainBinding
@@ -21,13 +20,25 @@ class MainActivity : AppCompatActivity() {
             val telefone = amd.telefoneEt.text.toString()
             val email = amd.emailEt.text.toString()
             val emailListado = if(amd.emailCb.isChecked) "Sim" else "Não"
+            var sexo = "Não definido"
+            val cidade = amd.cidadeEt.text.toString()
+
+
+            if (amd.masculinoRb.isChecked){
+                sexo = "Masculino"
+            }
+            if(amd.femininoRb.isChecked){
+                sexo = "Feminino"
+            }
 
             Toast.makeText(
                 this@MainActivity,
                 "Nome: $nomeCompleto \n" +
                         "Telefone: $telefone \n" +
                         "E-mail: $email \n" +
-                        "Inscrito na lista de E-mails: $emailListado",
+                        "Inscrito na lista de E-mails: $emailListado \n" +
+                        "Sexo: $sexo \n" +
+                        "Cidade: $cidade",
                 Toast.LENGTH_SHORT
             ).show()
         }
