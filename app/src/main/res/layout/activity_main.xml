@@ -51,8 +51,9 @@
         android:id="@+id/telefoneEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/phone_exemple"
         android:autofillHints="0000000000"
-        android:inputType="number"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@+id/telefoneTv"/>
 
     <TextView
