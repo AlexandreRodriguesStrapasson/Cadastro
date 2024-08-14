@@ -23,6 +23,7 @@
         android:id="@+id/nome_completoEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="Alexanre Rodrigues"
         android:hint="@string/nome_completo"
         android:inputType="text"
         app:layout_constraintTop_toBottomOf="@+id/tituloTv"/>
@@ -31,6 +32,7 @@
         android:id="@+id/telefoneEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="(00)0000000"
         android:hint="@string/telefone"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@+id/nome_completoEt"/>
@@ -39,9 +41,19 @@
         android:id="@+id/emailEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
         android:hint="@string/e_mail"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/telefoneEt"/>
+
+    <CheckBox
+        android:id="@+id/emailCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar_na_lista_de_e_mails"
+        app:layout_constraintTop_toBottomOf="@id/emailEt"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

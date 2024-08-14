@@ -4,4 +4,5 @@
     <string name="nome_completo">Nome completo</string>
     <string name="telefone">Telefone</string>
     <string name="e_mail">E-mail</string>
+    <string name="ingresar_na_lista_de_e_mails">Ingresar na lista de e-mails?</string>
 </resources>
