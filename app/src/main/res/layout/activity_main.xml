@@ -19,32 +19,59 @@
         android:padding="16dp"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/nome_completoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_completo"
+        android:textColor="@color/black"
+        android:layout_marginStart="5sp"
+        app:layout_constraintTop_toBottomOf="@id/tituloTv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
     <EditText
         android:id="@+id/nome_completoEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints="Alexanre Rodrigues"
-        android:hint="@string/nome_completo"
         android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/tituloTv"/>
+        app:layout_constraintTop_toBottomOf="@+id/nome_completoTv"/>
+
+    <TextView
+        android:id="@+id/telefoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone"
+        android:textColor="@color/black"
+        android:layout_marginStart="5sp"
+        app:layout_constraintTop_toBottomOf="@id/nome_completoEt"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:id="@+id/telefoneEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="(00)0000000"
-        android:hint="@string/telefone"
+        android:autofillHints="0000000000"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/nome_completoEt"/>
+        app:layout_constraintTop_toBottomOf="@+id/telefoneTv"/>
+
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail"
+        android:textColor="@color/black"
+        android:layout_marginStart="5sp"
+        app:layout_constraintTop_toBottomOf="@id/telefoneEt"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:id="@+id/emailEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints="emailAddress"
-        android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/telefoneEt"/>
+        app:layout_constraintTop_toBottomOf="@+id/emailTv"/>
 
     <CheckBox
         android:id="@+id/emailCb"
