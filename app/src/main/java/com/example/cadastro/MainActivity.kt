@@ -1,6 +1,8 @@
 package com.example.cadastro
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,25 +18,20 @@ class MainActivity : AppCompatActivity() {
         amd = ActivityMainBinding.inflate(layoutInflater)
         setContentView(amd.main)
 
-        val estados = resources.getStringArray(R.array.estados_brasileiros)
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, estados)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        amd.spinnerTv.adapter = adapter
-
         amd.btSave.setOnClickListener {
             val nomeCompleto = amd.nomeCompletoEt.text.toString()
             val telefone = amd.telefoneEt.text.toString()
             val email = amd.emailEt.text.toString()
-            val emailListado = if(amd.emailCb.isChecked) "Sim" else "Não"
+            val emailListado = if (amd.emailCb.isChecked) "Sim" else "Não"
             var sexo = "Não definido"
             val cidade = amd.cidadeEt.text.toString()
             val uf = amd.spinnerTv.selectedItem.toString()
 
 
-            if (amd.masculinoRb.isChecked){
+            if (amd.masculinoRb.isChecked) {
                 sexo = "Masculino"
             }
-            if(amd.femininoRb.isChecked){
+            if (amd.femininoRb.isChecked) {
                 sexo = "Feminino"
             }
 
